@@ -2,28 +2,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <link href="node_modules/normalize.css/normalize.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet" />
         <style>
-            #background-container {
-                position: absolute;
-                left: 0px; top: 0px;
-                width: 100%;
-                height: 350px;
-                overflow: hidden;
-                border-bottom: 5px solid rgb(240, 240, 240);
+            body {
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                background-color: rgb(250, 250, 250);
+                font-size: 16px;
             }
 
-            .background-content {
+            #container {
                 position: absolute;
-                top: 0px; left: 50%;
-                width: 2000px; height: 400px;
-                margin-left: -1000px;
-            }
-
-            #content-container {
-                position: relative;
                 left: 50%;
                 margin-left: -600px;
                 width: 1200px;
@@ -56,6 +45,12 @@
                 background-color: rgba(255, 255, 255, 0.9);
                 padding: 10px;
                 font-family: "Lora";
+            }
+
+            #top img {
+                top: -160px;
+                position: relative;
+                z-index: 0;
             }
 
             #content {
@@ -121,44 +116,14 @@
                 clear: left;
                 margin-bottom:20px;
             }
-
-            #bottom-container {
-                width: 100%;
-                background-color: rgb(250, 250, 250);
-            }
-
-            #bottom-inner {
-                position: relative;
-                left: 50%;
-                width: 1200px;
-                margin-left: -600px;
-                padding: 30px;
-                font-size: 1em;
-                font-family: "Open Sans";
-            }
-
-            #bottom-inner a {
-                color: rgb(0, 40, 215);
-                text-decoration: none;
-            }
-
-            #bottom-inner a:hover {
-                color: rgb(60, 85, 215);
-            }
         </style>
     </head>
     <body>
-        <div id="background-container">
-            <!--img src="video_80.jpg" alt="" /-->
-            <idv id="background-content">
-                <img class="background-content" src="video_80.jpg" alt="" />
-                <iframe class="background-content" src="https://player.vimeo.com/video/325296692?autoplay=1&loop=1&title=0&byline=0&portrait=0" allow="autoplay;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-        </div>
-        <div id="content-container">
+        <div id="container">
             <div id="top">
                 <div id="heading">eqasim</div>
-                <div id="subheading">behavioral transport simulation</div>
+                <div id="subheading">transport in the loop</div>
+                <img src="video_35.jpg" alt="" />
             </div>
             <div id="content">
                 <div id="content-inner">
@@ -184,6 +149,16 @@
 
                         <div class="scenario">
                             <div class="scenario-image">
+                                <img src="zurich.png" alt="" />
+                            </div>
+                            <div class="scenario-content">
+                                <b>Zurich</b> is the smallest of the available
+                                use cases, but the one that has been around longest.
+                            </div>
+                            <div class="scenario-end"></div>
+                        </div>
+                        <div class="scenario">
+                            <div class="scenario-image">
                                 <img src="paris.png" alt="" />
                             </div>
                             <div class="scenario-content">
@@ -193,37 +168,9 @@
                             </div>
                             <div class="scenario-end"></div>
                         </div>
-
-                        <div class="scenario">
-                            <div class="scenario-image">
-                                <img src="zurich.png" alt="" />
-                            </div>
-                            <div class="scenario-content">
-                                <b>Zurich</b> is the smallest of the available
-                                use cases, but the one that has been around longest.
-                            </div>
-                            <div class="scenario-end"></div>
-                        </div>
-
-                        <div class="scenario">
-                            <div class="scenario-image">
-                                <img src="switzerland.png" alt="" />
-                            </div>
-                            <div class="scenario-content">
-                                <b>Switzerland</b> is mainly used at the Institute for Transport
-                                Planning at ETH Zurich.
-                            </div>
-                            <div class="scenario-end"></div>
-                        </div>
                     </div>
                     <div style="clear: both;"></div>
                 </div>
-            </div>
-        </div>
-        <div id="bottom-container">
-            <div id="bottom-inner">
-                Copyright 2019 Sebastian Hörl, Milos Balac<br />
-                <a href="#">Impressum</a> &nbsp; &nbsp; <a href="#">Privacy</a>
             </div>
         </div>
     </body>
