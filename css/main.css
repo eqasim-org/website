@@ -18,6 +18,8 @@
     z-index: 0; }
   #background iframe {
     z-index: 1; }
+  #background video {
+    z-index: 1; }
 
 #main {
   position: absolute;
