@@ -2,29 +2,46 @@
 
 {% block content %}
 <div class="row no-gutters">
-    <div class="col">
+    <div class="col-sm-8">
         <h2>The mission</h2>
-        <p>  	 
-            We aim to provide a packaged framework that uses estimated
-            discrete-choice models to enable transport planners to
-            predict detailed outcomes of different policies.
-        </p>
-    </div>
-    <div class="col">
+        <div class="aim">
+            We provide an <b>open-source</b> and extensible <b>platform</b>
+            to test novel transport planning methods in an integrated
+            <b>pipeline</b>.
+        </div>
+        <div class="aim">
+            We'd like to bridge the worlds of macroscopic models,
+            agent-based simulation and discrete choice modelling.
+        </div>
+        <div class="aim">
+            We offer to research complete, policy-ready
+            agent-based transport <b>scenarios</b> based on well-tested
+            tools and algorithms.
+        </div>
+        <div class="aim">
+            <a href="#">Read more</a> about the idea behind <i>eqasim</i>!
+        </div>
+
         <h2>The model</h2>
         <p>
-            The <i>eqasim</i> is a packaged framework 
-        	that combines <a href="https://www.matsim.org" target="_blank">MATSim</a>
-        	and discrete-choice models in an easy
-        	to use environment. Get it on <a href="https://github.com/matsim-eth/discrete-mode-choice" 
-        	target="_blank">GitHub</a>, where you can also see the most recent
-        	publication list using this framework.
+            The base configuration of <i>eqasim</i> features a pipeline
+            that applies common algorithms to synthesize rich and detailed agent-based
+            transport simulation scenarios.
         </p>
-        <div class="flow">
-	        <img src="/assets/eqasim_v2.png" style="width:142px;height:202px;" alt="" />
-        </div>
+        <p>
+            <img src="/assets/eqasim_h_v1.png" style="width: 100%" alt="" />
+        </p>
+        <p>
+            The scenarios are simulated using the
+            agent- and activity-based transport simulation framework <a href="https://www.matsim.org">MATSim</a>
+            in combination with <i>eqasim</i>'s novel <a href="https://github.com/matsim-eth/discrete-mode-choice">Discrete Mode Choice extension</a>.
+        </p>
+        <p>
+            All parts in that chain are replacable and adjustable which allows
+            to test novel, specific models in an integrated context.
+        </p>
     </div>
-    <div class="col">
+    <div class="col-sm-4">
         <h2>Scenarios</h2>
         <p>
             A number of simulation scenarios are available for
@@ -52,6 +69,7 @@
                 Planning at ETH Zurich.
             </p>
         </div>
+        <div id="matsim"><div>&nbsp;powered by <span>MATSim</span></div></div>
     </div>
 </div>
 {% endblock %}

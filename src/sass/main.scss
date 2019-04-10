@@ -66,8 +66,25 @@ $general-font: "Open Sans";
     padding-top: 20px;
     background-color: white;
 
-    .col {
-        padding-right: 10px;
+    .col-sm-8 {
+        padding-right: 2ex;
+    }
+
+    .aim {
+        display: inline-block;
+        width: 39ex;
+        padding-left: 3ex;
+        margin-bottom: 3ex;
+        vertical-align: top;
+        text-align: justify;;
+    }
+
+    p {
+        text-align: justify;
+    }
+
+    .col-4 p {
+        text-align: left;
     }
 }
 
@@ -106,5 +123,30 @@ p {
 
     .bottom-links span {
         margin-right: 20px;
+    }
+}
+
+#matsim {
+    margin-top: 5ex;
+    margin-bottom: 5ex;
+    text-align: center;
+
+    div {
+        font-size: 0.8em;
+        text-align: left;
+        color: white;
+        background-color: #3498db;
+        padding: 1ex;
+        display: inline-block;
+        line-height: 1em;
+        padding-bottom: 0.5ex;font-weight: bold;
+
+        span {
+            line-height: 1em;
+            font-size: 4em;
+            color: white;
+            display: block;
+            font-weight: bold;
+        }
     }
 }
