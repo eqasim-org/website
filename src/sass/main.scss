@@ -47,15 +47,25 @@ $general-font: "Open Sans";
         padding: 10px;
         margin: 0px;
 
-        &.sub {
-            font-size: 2em;
-        }
-
         a {
             color: black;
 
             &:hover {
                 text-decoration: none;
+            }
+        }
+
+        &.sub {
+            font-size: 1.5em;
+
+            a {
+                display: inline-block;
+                margin-left: 5px;
+                margin-right: 5px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

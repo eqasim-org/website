@@ -37,12 +37,18 @@
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px;
     margin: 0px; }
-    #head h1.sub {
-      font-size: 2em; }
     #head h1 a {
       color: black; }
       #head h1 a:hover {
         text-decoration: none; }
+    #head h1.sub {
+      font-size: 1.5em; }
+      #head h1.sub a {
+        display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px; }
+        #head h1.sub a:hover {
+          text-decoration: underline; }
 
 #content {
   margin-top: 10px;
