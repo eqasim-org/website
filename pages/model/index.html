@@ -9,7 +9,11 @@
             gtag('js', new Date());
             gtag('config', 'UA-137229598-1');
         </script>
-
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -37,27 +41,28 @@
                 
 <div class="row no-gutters">
     <div class="col-sm-12">
-        <h2>The eqasim model</h2>
-        <p>
+        <h2  class="aligncenter">The eqasim model</h2>
+        <p class="aligncenter">
             The base configuration of <i>eqasim</i> features a pipeline
             that applies common algorithms to synthesize rich and detailed agent-based
-            transport simulation scenarios.
+            transport simulation scenarios. They are then paird with the discrete mode-choice extension of MATSim to simulate 
+            individuals behaviour in the study area.
         </p>
-        <p>
-            <img src="/assets/eqasim_h_v1.png" style="width: 75%" alt="" />
+        <p class="aligncenter">
+            <img src="/assets/eqasim_h_v2.png" style="width: 28%" alt="" />
         </p>
-         <p>
+         <p class="aligncenter">
             Currently implemented scenarios can be found <a href="https://github.com/eqasim-org"> here</a>.
             The first point of entry should be the scenario of <a href="https://github.com/eqasim-org/ile-de-france">Île-de-France</a>, 
             where most of the documentation can be found. Detailed documentation of the <i>eqasim</i> pipeline approach you can find 
             <a href="https://www.researchgate.net/publication/341131284_Reproducible_scenarios_for_agent-based_transport_simulation_A_case_study_for_Paris_and_Ile-de-France">here</a>.
         </p>
-        <p>
+        <p class="aligncenter">
             The scenarios are simulated using the
             agent- and activity-based transport simulation framework <a href="https://www.matsim.org">MATSim</a>
             in combination with <i>eqasim</i>'s novel <a href="https://github.com/matsim-eth/discrete-mode-choice">Discrete Mode Choice extension</a>.
         </p>
-        <p>
+        <p class="aligncenter">
             All parts in that chain are replacable and adjustable which allows
             to test novel, specific models in an integrated context.
         </p>
